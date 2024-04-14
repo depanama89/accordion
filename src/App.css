@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+:root {
+  --background: 201 33% 10%;
+  --body-font: "Poppins", sans-serif;
+  --foreground: 200 23% 82%;
+  --muted: 201 12% 15%;
+  --muted-foreground: 201 12% 65%;
+  --popover: 201 33% 7%;
+  --popover-foreground: 200 23% 92%;
+  --card: 201 33% 8%;
+  --card-foreground: 200 23% 87%;
+  --border: 201 23% 15%;
+  --input: 201 23% 18%;
+  --primary: 114 33% 68%;
+  --primary-foreground: 114 33% 8%;
+  --secondary: 114 23% 25%;
+  --secondary-foreground: 114 23% 85%;
+  --accent: 201 33% 25%;
+  --accent-foreground: 201 33% 85%;
+  --destructive: 5 86% 51%;
+  --destructive-foreground: 0 0% 100%;
+  --ring: 114 33% 68%;
+  --radius: 0.5rem;
+}
+
+.app {
+  background-color: hsl(var(--background));
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: hsl(var(--foreground));
+  font-family: var(--body-font);
+}
+.accordion {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.item {
+  padding: 10px 20px;
+  border: 1px solid hsl(var(--border));
+  border-radius: 5px;
+  background-color: hsl(var(--card));
+}
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  cursor: pointer;
+}
+.content {
+  background: hsl(var(--primary));
+  padding: 10px;
+  border-radius: calc(var(--radius) - 2px);
+  color: hsl(var(--primary-foreground));
+}
